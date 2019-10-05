@@ -84,17 +84,17 @@ class AppContext(ApplicationContext):
 
     @Slot()
     def on_bootloader(self):
-        # Gets the bins from the file
-        data = cyacd.BootloaderData.read(self.cyacd_file)
-        # 
-        session = make_session()
-        bl = BootloaderHost(session, sys.stdout)
+        with open(self.cyacd_file, 'r') as app:
+            data = cyacd.BootloaderData.read(app)
+            # 
+            session = make_session()
+            bl = BootloaderHost(session, sys.stdout)
 
-        try:
-            bl.bootload(data, True, True, args.psoc5)
-        except (protocol.BootloaderError, BootloderError) as e:
-            print('Unhandled error: {}'.format(e))
-            return 1
+            try:
+                bl.bootload(data, True, True, args.psoc5)
+            except (protocol.BootloaderError, BootloderError) as e:
+                print('Unhandled error: {}'.format(e))
+                return 1
 
         return 0
 
