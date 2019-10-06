@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>300</width>
-    <height>600</height>
+    <height>700</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,43 +19,24 @@
   <property name="minimumSize">
    <size>
     <width>300</width>
-    <height>600</height>
+    <height>700</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>300</width>
-    <height>600</height>
+    <height>700</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Cyflash GUI v0.1</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>339</y>
-      <width>61</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string>Progress...</string>
-    </property>
-   </widget>
    <widget class="QProgressBar" name="bootloader_progressBar">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>370</y>
+      <y>470</y>
       <width>281</width>
       <height>21</height>
      </rect>
@@ -67,124 +48,23 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>281</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Serial configuration</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-    <widget class="QPushButton" name="list_com_pushButton">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>121</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>List serial ports</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="port_list_comboBox">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>30</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="port_open_pushButton">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>121</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Open serial port</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="port_close_pushButton">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>110</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Close serial port</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="baudrate_comboBox">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>77</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <item>
-      <property name="text">
-       <string>115200</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>9600</string>
-      </property>
-     </item>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>76</x>
-       <y>70</y>
-       <width>51</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Baudrate</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>160</y>
+      <y>180</y>
       <width>281</width>
-      <height>181</height>
+      <height>271</height>
      </rect>
     </property>
     <property name="title">
-     <string>Firmware configuration</string>
+     <string>Cyflash Configuration</string>
     </property>
     <widget class="QPushButton" name="boot_inicio_pushButton">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>150</y>
+       <y>240</y>
        <width>241</width>
        <height>21</height>
       </rect>
@@ -193,34 +73,11 @@
       <string>Start bootloader</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="bootloadeTimeout_lineEdit">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>60</y>
-       <width>71</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>191</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Bootloader timeout (s)</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="lineEdit_file_path">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>31</y>
+       <y>21</y>
        <width>221</width>
        <height>21</height>
       </rect>
@@ -233,7 +90,7 @@
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>30</y>
+       <y>20</y>
        <width>31</width>
        <height>21</height>
       </rect>
@@ -245,8 +102,8 @@
     <widget class="QCheckBox" name="newapp_checkBox">
      <property name="geometry">
       <rect>
-       <x>19</x>
-       <y>120</y>
+       <x>10</x>
+       <y>80</y>
        <width>71</width>
        <height>21</height>
       </rect>
@@ -258,8 +115,8 @@
     <widget class="QCheckBox" name="downgrade_checkBox">
      <property name="geometry">
       <rect>
-       <x>19</x>
-       <y>89</y>
+       <x>10</x>
+       <y>50</y>
        <width>81</width>
        <height>21</height>
       </rect>
@@ -272,7 +129,7 @@
      <property name="geometry">
       <rect>
        <x>100</x>
-       <y>90</y>
+       <y>50</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -285,13 +142,148 @@
      <property name="geometry">
       <rect>
        <x>100</x>
-       <y>120</y>
+       <y>80</y>
        <width>81</width>
        <height>21</height>
       </rect>
      </property>
      <property name="text">
       <string>No New App</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Target Device</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="device_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>110</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>PSoC 3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PSoC 4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PSoC 5LP</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="use_key_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Use KEY</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="key_lineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>149</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>HHHHHHHHHHHH</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0x</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="is_custom_chunk_size_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Custom chunk size</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="chunksize_lineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="is_dual_app_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Is dual Application?</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="verbose_output_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>210</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Verbose Output</string>
      </property>
     </widget>
    </widget>
@@ -302,7 +294,7 @@
     <property name="geometry">
      <rect>
       <x>13</x>
-      <y>400</y>
+      <y>510</y>
       <width>271</width>
       <height>111</height>
      </rect>
@@ -314,8 +306,8 @@
    <widget class="QPushButton" name="store_log_pushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>520</y>
+      <x>10</x>
+      <y>630</y>
       <width>121</width>
       <height>23</height>
      </rect>
@@ -327,8 +319,8 @@
    <widget class="QPushButton" name="clear_log_pushButton">
     <property name="geometry">
      <rect>
-      <x>164</x>
-      <y>520</y>
+      <x>170</x>
+      <y>630</y>
       <width>111</width>
       <height>23</height>
      </rect>
@@ -336,6 +328,137 @@
     <property name="text">
      <string>Clear log</string>
     </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>9</y>
+      <width>291</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="serial_tab">
+     <attribute name="title">
+      <string>Serial</string>
+     </attribute>
+     <widget class="QPushButton" name="list_com_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>List serial ports</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="port_list_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>10</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Baudrate</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="baudrate_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>115200</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>9600</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="port_open_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open serial port</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="port_close_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>100</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Close serial port</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bootloaderTimeout_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bootloader responce timeout (s)</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="can_tab">
+     <attribute name="title">
+      <string>CAN Bus</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
