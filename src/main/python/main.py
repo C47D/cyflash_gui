@@ -234,10 +234,11 @@ class AppContext(ApplicationContext):
             data = cyacd.BootloaderData.read(app)
             # 
             session = self.make_session()
+            # TODO How to get BootloaderHost output in a logging instance
             bl = BootloaderHost(session, sys.stdout, False)
 
             try:
-                # last parameter is psoc5
+                # TODO: last parameter is psoc5, check key
                 bl.bootload(data, True, True, True)
             except (protocol.BootloaderError, BootloderError) as e:
                 print('Unhandled error: {}'.format(e))
